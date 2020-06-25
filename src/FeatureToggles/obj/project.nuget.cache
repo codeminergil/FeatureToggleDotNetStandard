@@ -1,11 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "SF3vll/LTV0Ea5FhrJCZlEfmhIQ6u1ezIiOCkaMHhCg+7FpgX8CSUhimfsLX2fR/BW9oz4iQ+nr4/gLiqcCkzA==",
+  "dgSpecHash": "p6Z8D+8vLpSKHErOzOxmDlJsLR9ULR13ZWR9FCLkliU4DX49h/4IRyj86LeueRHHcQ/u4BKdgFIH4RxE7oEZOw==",
   "success": true,
-  "projectFilePath": "P:\\CoreModules-FeatureToggles-v2\\src\\FeatureToggles\\FeatureToggles.csproj",
+  "projectFilePath": "P:\\FeatureToggleDotNetStandard\\src\\FeatureToggles\\FeatureToggles.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brandon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\brandon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\brandon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\brandon\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

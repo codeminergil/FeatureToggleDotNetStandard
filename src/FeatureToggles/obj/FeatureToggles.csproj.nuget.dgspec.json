@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\CoreModules-FeatureToggles-v2\\src\\FeatureToggles\\FeatureToggles.csproj": {}
+    "P:\\FeatureToggleDotNetStandard\\src\\FeatureToggles\\FeatureToggles.csproj": {}
   },
   "projects": {
-    "P:\\CoreModules-FeatureToggles-v2\\src\\FeatureToggles\\FeatureToggles.csproj": {
+    "P:\\FeatureToggleDotNetStandard\\src\\FeatureToggles\\FeatureToggles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\CoreModules-FeatureToggles-v2\\src\\FeatureToggles\\FeatureToggles.csproj",
+        "projectUniqueName": "P:\\FeatureToggleDotNetStandard\\src\\FeatureToggles\\FeatureToggles.csproj",
         "projectName": "FeatureToggles",
-        "projectPath": "P:\\CoreModules-FeatureToggles-v2\\src\\FeatureToggles\\FeatureToggles.csproj",
+        "projectPath": "P:\\FeatureToggleDotNetStandard\\src\\FeatureToggles\\FeatureToggles.csproj",
         "packagesPath": "C:\\Users\\brandon\\.nuget\\packages\\",
-        "outputPath": "P:\\CoreModules-FeatureToggles-v2\\src\\FeatureToggles\\obj\\",
+        "outputPath": "P:\\FeatureToggleDotNetStandard\\src\\FeatureToggles\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brandon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

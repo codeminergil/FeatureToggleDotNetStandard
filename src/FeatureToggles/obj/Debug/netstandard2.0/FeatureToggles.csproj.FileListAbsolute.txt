@@ -1,0 +1,8 @@
+P:\FeatureToggleDotNetStandard\src\FeatureToggles\bin\Debug\netstandard2.0\FeatureToggles.deps.json
+P:\FeatureToggleDotNetStandard\src\FeatureToggles\bin\Debug\netstandard2.0\FeatureToggles.dll
+P:\FeatureToggleDotNetStandard\src\FeatureToggles\bin\Debug\netstandard2.0\FeatureToggles.pdb
+P:\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.csproj.CoreCompileInputs.cache
+P:\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.AssemblyInfoInputs.cache
+P:\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.AssemblyInfo.cs
+P:\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.dll
+P:\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.pdb
