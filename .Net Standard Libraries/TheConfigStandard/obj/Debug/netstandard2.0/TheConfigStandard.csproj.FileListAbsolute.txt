@@ -1,0 +1,9 @@
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\bin\Debug\netstandard2.0\TheConfigStandard.deps.json
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\bin\Debug\netstandard2.0\TheConfigStandard.dll
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\bin\Debug\netstandard2.0\TheConfigStandard.pdb
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\obj\Debug\netstandard2.0\TheConfigStandard.csproj.CoreCompileInputs.cache
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\obj\Debug\netstandard2.0\TheConfigStandard.AssemblyInfoInputs.cache
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\obj\Debug\netstandard2.0\TheConfigStandard.AssemblyInfo.cs
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\obj\Debug\netstandard2.0\TheConfigStandard.dll
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\obj\Debug\netstandard2.0\TheConfigStandard.pdb
+G:\Projects\.Net\.Net Standard Libraries\TheConfigStandard\obj\Debug\netstandard2.0\TheConfigStandard.csprojAssemblyReference.cache
