@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p6Z8D+8vLpSKHErOzOxmDlJsLR9ULR13ZWR9FCLkliU4DX49h/4IRyj86LeueRHHcQ/u4BKdgFIH4RxE7oEZOw==",
+  "dgSpecHash": "O7tCtVStqF04LSAli/NgoNLDRD7RfBQ2ygITnRDSt8j2tzrVjJq6CTSrSMkW8ogL9yxrDg4dDXeEuZ3efnS3qQ==",
   "success": true,
-  "projectFilePath": "P:\\FeatureToggleDotNetStandard\\src\\FeatureToggles\\FeatureToggles.csproj",
+  "projectFilePath": "P:\\FeatureToggleV2\\FeatureToggleDotNetStandard\\src\\FeatureToggles\\FeatureToggles.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brandon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\brandon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
