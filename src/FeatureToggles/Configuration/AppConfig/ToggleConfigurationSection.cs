@@ -1,6 +1,6 @@
 ﻿
 
-namespace FeatureToggles.Configuration
+namespace FeatureToggles.Configuration.AppConfig
 {
     using System.Configuration;
 

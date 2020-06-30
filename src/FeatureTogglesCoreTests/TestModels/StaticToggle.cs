@@ -22,6 +22,7 @@ namespace ToggleTests.TestModels
     using System.Diagnostics.CodeAnalysis;
     using FeatureToggles;
     using FeatureToggles.Configuration;
+    using FeatureToggles.Configuration.AppConfig.Providers;
     using FeatureToggles.Providers;
 
     [ExcludeFromCodeCoverage]
