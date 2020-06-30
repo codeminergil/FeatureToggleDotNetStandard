@@ -1,34 +1,25 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="StaticToggle.cs" company="Code Miners Limited">
-//  Copyright (c) 2019 Code Miners Limited
-//   
-//  This program is free software: you can redistribute it and/or modify
-//  it under the terms of the GNU Lesser General Public License as published by
-//  the Free Software Foundation, either version 3 of the License, or
-//  (at your option) any later version.
-//  
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
-//  GNU Lesser General Public License for more details.
-//  
-//  You should have received a copy of the GNU Lesser General Public License
-//  along with this program.If not, see<https://www.gnu.org/licenses/>.
-// </copyright>
-//-----------------------------------------------------------------------
-
-namespace ToggleTests.TestModels
+﻿
+namespace FeatureTogglesCoreTests.JsonTests.TestModels
 {
+    using Microsoft.Extensions.Configuration;
     using System.Diagnostics.CodeAnalysis;
-    using FeatureToggles;
-    using FeatureToggles.Configuration;
-    using FeatureToggles.Configuration.AppConfig.Providers;
-    using FeatureToggles.Providers;
+    using FeatureTogglesIConfiguration;
+    using FeatureTogglesIConfiguration.JsonConfiguration;
+    using FeatureTogglesIConfiguration.JsonProviders;
 
     [ExcludeFromCodeCoverage]
     public static class StaticToggle
     {
-        private static readonly ToggleFactory Factory = new ToggleFactory(new AppConfigurationProvider(), new AppConfigDataProvider());
+        public static IConfiguration InitConfiguration()
+        {
+            var config = new ConfigurationBuilder()
+                .AddJsonFile("app.config.json")
+                .Build();
+            return config;
+        }
+
+        public static IConfiguration configuration = InitConfiguration();
+        private static readonly ToggleFactory Factory = new ToggleFactory(new AppConfigurationProvider(configuration), new AppConfigDataProvider(configuration));
 
         public static bool IsEnabled
         {
