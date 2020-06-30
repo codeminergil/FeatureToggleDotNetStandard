@@ -1,0 +1,84 @@
+{
+  "configSections": {
+    "section": {
+      "name": "ToggleConfiguration"
+    }
+  },
+  "appSettings": {
+    "toggleSettings": [
+      {
+        "key": "Toggle:Enabled",
+        "value": "true"
+      },
+      {
+        "key": "Toggle:DefaultValue",
+        "value": "false"
+      },
+      {
+        "key": "Toggle:Environment",
+        "value": ""
+      },
+      {
+        "key": "ToggleFlag:CacheInheritableDatasource",
+        "value": "true"
+      },
+      {
+        "key": "ToggleFlag:StrongToggleId",
+        "value": "true"
+      }
+    ]
+  },
+  "ToggleConfiguration": {
+    "toggles": [
+      {
+        "name": "CacheInheritableDatasource",
+        "enabled": "true",
+        "roles": [
+          {
+            "role": {
+              "name": "Staff"
+            }
+          }
+        ],
+        "users": [
+          {
+            "user": {
+              "name": "abcd"
+            }
+          }
+        ],
+        "ipaddresses": [
+          {
+            "ipaddress": {
+              "value": "127.0.0.1/28"
+            }
+          }
+        ]
+      },
+      {
+        "name": "StrongToggleId",
+        "enabled": "true"
+      }
+    ]
+  },
+  "startup": {
+    "supportedRuntime": {
+      "version": "v4.0",
+      "sku": ".NETFramework,Version=v4.5.2"
+    }
+  },
+  "system.diagnostics": {
+    "trace": {
+      "autoflush": "false",
+      "indentsize": "4",
+      "listeners": {
+        "add": {
+          "name": "ConsoleListener"
+        },
+        "remove": {
+          "name": "Default"
+        }
+      }
+    }
+  }
+}

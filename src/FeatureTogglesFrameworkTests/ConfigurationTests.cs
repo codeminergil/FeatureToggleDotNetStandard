@@ -17,7 +17,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace ToggleTests
+namespace FeatureTogglesFrameworkTests
 {
     using System.Configuration;
     using System.Diagnostics.CodeAnalysis;

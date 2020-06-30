@@ -17,7 +17,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace ToggleTests
+namespace FeatureTogglesFrameworkTests
 {
     using FeatureToggles;
     using NUnit.Framework;

@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="ToggleIdTests.cs" company="Code Miners Limited">
+// <copyright file="StrongToggle.cs" company="Code Miners Limited">
 //  Copyright (c) 2019 Code Miners Limited
 //   
 //  This program is free software: you can redistribute it and/or modify
@@ -17,30 +17,17 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace ToggleTests
+namespace FeatureTogglesCoreTests.XmlTests.TestModels
 {
+    using System.Diagnostics.CodeAnalysis;
     using FeatureToggles;
-    using NUnit.Framework;
 
-    [TestFixture]
-    public class ToggleIdTests
+    [ExcludeFromCodeCoverage]
+    public class StrongToggleId : ToggleId
     {
-        [Test]
-        public void EqualityTest()
+        public StrongToggleId()
         {
-            ToggleId id = new ToggleId("test");
-            ToggleId id2 = new ToggleId("test");
-
-            Assert.AreEqual(id, id2, "Toggle ids have the same name so should be equal");
-        }
-
-        [Test]
-        public void InequalityTest()
-        {
-            ToggleId id = new ToggleId("test");
-            ToggleId id2 = new ToggleId("test2");
-
-            Assert.AreNotEqual(id, id2, "Toggle ids have the different names so should be different");
+            Name = GetType().Name;
         }
     }
 }

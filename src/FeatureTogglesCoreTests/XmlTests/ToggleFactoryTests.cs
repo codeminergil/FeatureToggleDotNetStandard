@@ -17,7 +17,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace ToggleTests
+namespace FeatureTogglesCoreTests.XmlTests
 {
     using System.Diagnostics.CodeAnalysis;
     using FeatureToggles;

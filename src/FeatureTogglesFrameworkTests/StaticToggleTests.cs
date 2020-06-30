@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="StaticToggleTests.cs" company="Code Miners Limited">
+// <copyright file="StaticFeatureTogglesFrameworkTests.cs" company="Code Miners Limited">
 //  Copyright (c) 2019 Code Miners Limited
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace ToggleTests
+namespace FeatureTogglesFrameworkTests
 {
     using System.Diagnostics.CodeAnalysis;
     using NUnit.Framework;
@@ -25,7 +25,7 @@ namespace ToggleTests
 
     [TestFixture]
     [ExcludeFromCodeCoverage]
-    public class StaticToggleTests
+    public class StaticFeatureTogglesFrameworkTests
     {
         [Test]
         public void StaticToggleTest()

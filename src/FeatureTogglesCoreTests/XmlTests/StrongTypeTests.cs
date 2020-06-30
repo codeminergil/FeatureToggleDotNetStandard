@@ -1,6 +1,6 @@
 ﻿
 //-----------------------------------------------------------------------
-// <copyright file="ToggleTests.cs" company="Code Miners Limited">
+// <copyright file="FeatureTogglesCoreTests.XmlTests.cs" company="Code Miners Limited">
 //  Copyright (c) 2019 Code Miners Limited
 //   
 //  This program is free software: you can redistribute it and/or modify
@@ -18,7 +18,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace ToggleTests
+namespace FeatureTogglesCoreTests.XmlTests
 {
     using System.Diagnostics.CodeAnalysis;
     using FeatureToggles;

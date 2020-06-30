@@ -1,45 +1,46 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="StaticToggle.cs" company="Code Miners Limited">
+// <copyright file="ToggleIdTests.cs" company="Code Miners Limited">
 //  Copyright (c) 2019 Code Miners Limited
-//   
+//
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
 //  the Free Software Foundation, either version 3 of the License, or
 //  (at your option) any later version.
-//  
+//
 //  This program is distributed in the hope that it will be useful,
 //  but WITHOUT ANY WARRANTY; without even the implied warranty of
 //  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
 //  GNU Lesser General Public License for more details.
-//  
+//
 //  You should have received a copy of the GNU Lesser General Public License
 //  along with this program.If not, see<https://www.gnu.org/licenses/>.
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace ToggleTests.TestModels
+namespace FeatureTogglesCoreTests.XmlTests
 {
-    using System.Diagnostics.CodeAnalysis;
     using FeatureToggles;
-    using FeatureToggles.Configuration;
-    using FeatureToggles.Providers;
+    using NUnit.Framework;
 
-    [ExcludeFromCodeCoverage]
-    public static class StaticToggle
+    [TestFixture]
+    public class ToggleIdTests
     {
-        private static readonly ToggleFactory Factory = new ToggleFactory(new AppConfigurationProvider(), new AppConfigDataProvider());
-
-        public static bool IsEnabled
+        [Test]
+        public void EqualityTest()
         {
-            get
-            {
-                Toggle toggle = Factory.Get<StrongToggleId>();
+            ToggleId id = new ToggleId("test");
+            ToggleId id2 = new ToggleId("test");
 
-                // OR:
-                // Toggle toggle = Factory.Get("StaticToggle");
+            Assert.AreEqual(id, id2, "Toggle ids have the same name so should be equal");
+        }
 
-                return toggle.IsEnabled;
-            }
+        [Test]
+        public void InequalityTest()
+        {
+            ToggleId id = new ToggleId("test");
+            ToggleId id2 = new ToggleId("test2");
+
+            Assert.AreNotEqual(id, id2, "Toggle ids have the different names so should be different");
         }
     }
 }

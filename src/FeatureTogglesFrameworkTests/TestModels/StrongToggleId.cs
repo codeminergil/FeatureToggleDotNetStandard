@@ -17,7 +17,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace ToggleTests.TestModels
+namespace FeatureTogglesFrameworkTests.TestModels
 {
     using System.Diagnostics.CodeAnalysis;
     using FeatureToggles;
