@@ -9,7 +9,6 @@ P:\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\Featu
 P:\FeatureToggleV2\FeatureToggleDotNetStandard\src\FeatureToggles\bin\Debug\netstandard2.0\FeatureToggles.deps.json
 P:\FeatureToggleV2\FeatureToggleDotNetStandard\src\FeatureToggles\bin\Debug\netstandard2.0\FeatureToggles.dll
 P:\FeatureToggleV2\FeatureToggleDotNetStandard\src\FeatureToggles\bin\Debug\netstandard2.0\FeatureToggles.pdb
-P:\FeatureToggleV2\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.csprojAssemblyReference.cache
 P:\FeatureToggleV2\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.csproj.CoreCompileInputs.cache
 P:\FeatureToggleV2\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.AssemblyInfoInputs.cache
 P:\FeatureToggleV2\FeatureToggleDotNetStandard\src\FeatureToggles\obj\Debug\netstandard2.0\FeatureToggles.AssemblyInfo.cs
