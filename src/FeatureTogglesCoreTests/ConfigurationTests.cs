@@ -3,8 +3,9 @@ namespace FeatureTogglesCoreTests.JsonTests
 {
     using Microsoft.Extensions.Configuration;
     using NUnit.Framework;
-    using FeatureTogglesIConfiguration.JsonConfiguration;
-    using NUnit.Framework.Internal;
+ //   using FeatureTogglesIConfiguration.JsonConfiguration;
+ //   using NUnit.Framework.Internal;
+    using FeatureToggles.Configuration.AppConfig;
 
     [TestFixture]
     public class ConfigurationTests
@@ -13,7 +14,8 @@ namespace FeatureTogglesCoreTests.JsonTests
         public static IConfiguration InitConfiguration()
         {
             var config = new ConfigurationBuilder()
-                .AddJsonFile("app.config.json")
+                // .AddJsonFile("app.config.json")
+                .AddJsonFile("appsettings.json")
                 .Build();
             return config;
         }
@@ -35,14 +37,14 @@ namespace FeatureTogglesCoreTests.JsonTests
 
             ToggleConfigurationSection config = configuration.GetSection("ToggleConfiguration").Get<ToggleConfigurationSection>();
 
-            ToggleElement toggle = config.toggles[0];
+            ToggleElement toggle = config.Toggles[0];
 
             Assert.IsNotNull(toggle);
 
-            Assert.AreEqual("CacheInheritableDatasource", toggle.name);
-            Assert.IsTrue(toggle.users.Count > 0);
-            Assert.IsTrue(toggle.roles.Count > 0);
-            Assert.IsTrue(toggle.ipaddresses.Count > 0);
+            Assert.AreEqual("CacheInheritableDatasource", toggle.Name);
+            Assert.IsTrue(toggle.Users.Count > 0);
+            Assert.IsTrue(toggle.Roles.Count > 0);
+            Assert.IsTrue(toggle.IpAddresses.Count > 0);
         }
 
         [Test]
@@ -52,14 +54,14 @@ namespace FeatureTogglesCoreTests.JsonTests
 
             ToggleConfigurationSection config = configuration.GetSection("ToggleConfiguration").Get<ToggleConfigurationSection>();
 
-            ToggleElement toggle = config.toggles[0];
+            ToggleElement toggle = config.Toggles[0];
 
             Assert.IsNotNull(toggle);
 
-            Assert.AreEqual("CacheInheritableDatasource", toggle.name);
-            Assert.IsTrue(toggle.users.Count > 0);
+            Assert.AreEqual("CacheInheritableDatasource", toggle.Name);
+            Assert.IsTrue(toggle.Users.Count > 0);
 
-            Assert.AreEqual("abcd", toggle.users[0].user.name);
+            Assert.AreEqual("abcd", toggle.Users[0].Name);
         }
 
         [Test]
@@ -69,14 +71,14 @@ namespace FeatureTogglesCoreTests.JsonTests
 
             ToggleConfigurationSection config = configuration.GetSection("ToggleConfiguration").Get<ToggleConfigurationSection>();
 
-            ToggleElement toggle = config.toggles[0];
+            ToggleElement toggle = config.Toggles[0];
 
             Assert.IsNotNull(toggle);
 
-            Assert.AreEqual("CacheInheritableDatasource", toggle.name);
-            Assert.IsTrue(toggle.roles.Count > 0);
+            Assert.AreEqual("CacheInheritableDatasource", toggle.Name);
+            Assert.IsTrue(toggle.Roles.Count > 0);
 
-            Assert.AreEqual("Staff", toggle.roles[0].role.name);
+            Assert.AreEqual("Staff", toggle.Roles[0].Name);
         }
 
         [Test]
@@ -86,14 +88,14 @@ namespace FeatureTogglesCoreTests.JsonTests
 
             ToggleConfigurationSection config = configuration.GetSection("ToggleConfiguration").Get<ToggleConfigurationSection>();
 
-            ToggleElement toggle = config.toggles[0];
+            ToggleElement toggle = config.Toggles[0];
 
             Assert.IsNotNull(toggle);
 
-            Assert.AreEqual("CacheInheritableDatasource", toggle.name);
-            Assert.IsTrue(toggle.ipaddresses.Count > 0);
+            Assert.AreEqual("CacheInheritableDatasource", toggle.Name);
+            Assert.IsTrue(toggle.IpAddresses.Count > 0);
 
-            Assert.AreEqual("127.0.0.1/28", toggle.ipaddresses[0].ipaddress.value);
+            Assert.AreEqual("127.0.0.1/28", toggle.IpAddresses[0].Value);
         }
     }
 }

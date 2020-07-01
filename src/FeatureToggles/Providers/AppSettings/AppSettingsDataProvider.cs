@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FeatureToggles;
+using FeatureToggles.Configuration.AppConfig;
+using FeatureToggles.Models;
+using FeatureToggles.Providers;
 
 namespace TheConfigStandard.JsonProviders
 {
@@ -17,13 +21,13 @@ namespace TheConfigStandard.JsonProviders
 
         public void Initialise()
         {
-            for (int i = 0; i < ToggleConfigurations.toggles.Count; i++)
+            for (int i = 0; i < ToggleConfigurations.Toggles.Count; i++)
             {
-                ToggleElement element = ToggleConfigurations.toggles[i];
+                ToggleElement element = ToggleConfigurations.Toggles[i];
 
-                if (!toggles.ContainsKey(element.name))
+                if (!toggles.ContainsKey(element.Name))
                 {
-                    toggles.Add(element.name, ToggleConfigurations.toggles[i]);
+                    toggles.Add(element.Name, ToggleConfigurations.Toggles[i]);
                 }
 
             }
@@ -49,7 +53,7 @@ namespace TheConfigStandard.JsonProviders
 
             ToggleElement element = toggles[name];
 
-            Toggle toggle = new Toggle(element.name, element.enabled);
+            Toggle toggle = new Toggle(element.Name, element.Enabled);
 
             return toggle;
         }
@@ -65,7 +69,7 @@ namespace TheConfigStandard.JsonProviders
 
             if (!string.IsNullOrWhiteSpace(userData.UserRoles))
             {
-                List<string> roles = element.roles.Select(x => x.role.name).ToList();
+                List<string> roles = element.Roles.Select(x => x.Name).ToList();
                 bool found = false;
                 foreach (string role in userData.UserRoles.Split(new[] { "|" }, StringSplitOptions.RemoveEmptyEntries))
                 {
@@ -84,7 +88,7 @@ namespace TheConfigStandard.JsonProviders
 
             if (!string.IsNullOrWhiteSpace(userData.UserId))
             {
-                List<string> users = element.users.Select(x => x.user.name).ToList();
+                List<string> users = element.Users.Select(x => x.Name).ToList();
 
                 if (!users.Contains(userData.UserId))
                 {
@@ -99,7 +103,7 @@ namespace TheConfigStandard.JsonProviders
                     return new Toggle(name, false);
                 }
 
-                List<string> addresses = element.ipaddresses.Select(x => x.ipaddress.value).ToList();
+                List<string> addresses = element.IpAddresses.Select(x => x.Value).ToList();
                 bool found = false;
                 foreach (string address in addresses)
                 {
