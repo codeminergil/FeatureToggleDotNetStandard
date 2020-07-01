@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FeatureToggles;
-using FeatureToggles.Models;
-using FeatureToggles.Providers;
-using FeatureTogglesIConfiguration.JsonConfiguration;
-
-namespace TheConfigStandard.JsonProviders
+﻿namespace FeatureTogglesIConfiguration.JsonProviders
 {
     using Microsoft.Extensions.Configuration;
     using System.Net;
+    using FeatureTogglesIConfiguration.JsonConfiguration;
+ //   using FeatureTogglesIConfiguration.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
-    public class AppSettingsDataProvider : IToggleDataProvider
+    using FeatureToggles;
+    using FeatureToggles.Models;
+    using FeatureToggles.Providers;
+
+    public class AppConfigDataProvider : IToggleDataProvider
     {
         private static ToggleConfigurationSection ToggleConfigurations;
 
@@ -33,7 +32,7 @@ namespace TheConfigStandard.JsonProviders
             }
         }
 
-        public AppSettingsDataProvider(IConfiguration configuration)
+        public AppConfigDataProvider(IConfiguration configuration)
         {
             ToggleConfigurations = configuration.GetSection("ToggleConfiguration").Get<ToggleConfigurationSection>();
             Initialise();
