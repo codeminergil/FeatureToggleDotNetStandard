@@ -1,11 +1,16 @@
-﻿
+﻿using TheConfigStandard.JsonProviders;
+
 namespace FeatureTogglesCoreTests.JsonTests.TestModels
 {
     using Microsoft.Extensions.Configuration;
     using System.Diagnostics.CodeAnalysis;
-    using FeatureTogglesIConfiguration;
-    using FeatureTogglesIConfiguration.JsonConfiguration;
-    using FeatureTogglesIConfiguration.JsonProviders;
+    //using FeatureTogglesIConfiguration;
+    //using FeatureTogglesIConfiguration.JsonConfiguration;
+    //using FeatureTogglesIConfiguration.JsonProviders;
+    using FeatureToggles;
+    using FeatureToggles.Configuration.AppConfig.Providers;
+    using FeatureToggles.Providers;
+    using FeatureToggles.Configuration.AppSettings.Providers;
 
     [ExcludeFromCodeCoverage]
     public static class StaticToggle
@@ -19,7 +24,7 @@ namespace FeatureTogglesCoreTests.JsonTests.TestModels
         }
 
         public static IConfiguration configuration = InitConfiguration();
-        private static readonly ToggleFactory Factory = new ToggleFactory(new AppConfigurationProvider(configuration), new AppConfigDataProvider(configuration));
+        private static readonly ToggleFactory Factory = new ToggleFactory(new AppSettingsConfigurationProvider(configuration), new AppSettingsDataProvider(configuration));
 
         public static bool IsEnabled
         {

@@ -1,12 +1,15 @@
-﻿
-namespace FeatureTogglesCoreTests.JsonTests
+﻿namespace FeatureTogglesCoreTests.JsonTests
 {
     using Microsoft.Extensions.Configuration;
     using Moq;
     using NUnit.Framework;
     using System.Diagnostics.CodeAnalysis;
-    using FeatureTogglesIConfiguration;
-    using FeatureTogglesIConfiguration.JsonConfiguration;
+  //  using FeatureTogglesIConfiguration;
+  //  using FeatureTogglesIConfiguration.JsonConfiguration;
+    using FeatureToggles;
+    using FeatureToggles.Configuration;
+    using FeatureToggles.Configuration.AppSettings.Providers;
+    using FeatureToggles.Providers;
 
     [TestFixture]
     [ExcludeFromCodeCoverage]
@@ -35,7 +38,7 @@ namespace FeatureTogglesCoreTests.JsonTests
         [Test]
         public void SystemEnabledTest()
         {
-            IToggleConfiguration provider = new AppConfigurationProvider(InitConfiguration());
+            IToggleConfiguration provider = new AppSettingsConfigurationProvider(InitConfiguration());
 
             Assert.IsTrue(provider.SystemEnabled);
         }
@@ -43,7 +46,7 @@ namespace FeatureTogglesCoreTests.JsonTests
         [Test]
         public void DefaultValueTest()
         {
-            IToggleConfiguration provider = new AppConfigurationProvider(InitConfiguration());
+            IToggleConfiguration provider = new AppSettingsConfigurationProvider(InitConfiguration());
 
             Assert.IsFalse(provider.DefaultValue);
         }
