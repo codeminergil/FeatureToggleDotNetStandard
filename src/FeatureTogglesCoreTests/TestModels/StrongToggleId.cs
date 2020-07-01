@@ -1,8 +1,7 @@
-﻿
-namespace FeatureTogglesCoreTests.JsonTests.TestModels
+﻿namespace FeatureTogglesCoreTests.TestModels
 {
     using System.Diagnostics.CodeAnalysis;
-    using FeatureTogglesIConfiguration;
+    using FeatureToggles;
 
     [ExcludeFromCodeCoverage]
     public class StrongToggleId : ToggleId

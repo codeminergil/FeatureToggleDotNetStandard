@@ -1,9 +1,9 @@
 ﻿
-namespace FeatureTogglesCoreTests.JsonTests
+namespace FeatureTogglesCoreTests
 {
     using NUnit.Framework;
     using System.Diagnostics.CodeAnalysis;
-    using FeatureTogglesCoreTests.JsonTests.TestModels;
+    using FeatureTogglesCoreTests.TestModels;
 
     [TestFixture]
     [ExcludeFromCodeCoverage]
